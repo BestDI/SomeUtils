@@ -10,14 +10,7 @@ import java.lang.reflect.Method;
 public final class NfcUtil
 {
 
-    /**
-     * /**
-     * 判断当前是否手机是否已开启nfc服务 方法表述
-     *
-     * @param context
-     *
-     * @return boolean
-     */
+    // 判断手机是否开启NFC
     public static boolean isEnabledNFC(Context context)
     {
         if (null == context) {
@@ -39,6 +32,7 @@ public final class NfcUtil
     }
 
 
+    // 启用NFC功能
     public static boolean enableNFC(Context context)
     {
 
