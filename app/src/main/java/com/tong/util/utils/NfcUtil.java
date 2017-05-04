@@ -1,6 +1,7 @@
 package com.tong.util.utils;
 
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.nfc.NfcAdapter;
 import android.nfc.NfcManager;
 
@@ -59,5 +60,16 @@ public final class NfcUtil
         }
 
         return false;
+    }
+
+    // 判断是否支持NFC功能
+    public static boolean isSupportNfc(Context context)
+    {
+        PackageManager pm = context.getPackageManager();
+
+        //使用hasSystemFeature方法可以检查设备是否其他功能。如陀螺仪，NFC，蓝牙等等，
+        boolean nfc = pm.hasSystemFeature(PackageManager.FEATURE_NFC);
+
+        return nfc;
     }
 }
