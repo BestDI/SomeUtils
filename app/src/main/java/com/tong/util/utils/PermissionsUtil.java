@@ -1,20 +1,9 @@
-/*
- * Copyright (C) 2015 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License
- */
-
 package com.tong.util.utils;
+
+import android.app.Activity;
+import android.content.Context;
+import android.content.pm.PackageManager;
+import android.os.Build;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -24,22 +13,6 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-
-import android.app.Activity;
-import android.content.Context;
-import android.content.pm.PackageManager;
-import android.os.Build;
-
-/**
- * ****************************************************************
- * 文件名称 : PermissionsUtil.java
- * 作 者 :   x00355498
- * 创建时间 : 2015年10月8日 下午9:33:08
- * 文件描述 : 权限申请的辅助工具类
- * 版权声明 : Copyright (C) 2008-2011 华为技术有限公司(Huawei Tech.Co.,Ltd)
- * 修改历史 : 2015年10月8日 1.00 初始版本
- * ****************************************************************
- */
 public class PermissionsUtil
 {
 
